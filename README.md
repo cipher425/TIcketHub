@@ -13,6 +13,13 @@ The project was built in three deliberate stages:
 > Stage 1 and Stage 3 are the **same codebase**. Stage 3 upgrades are switched on with environment variables, so you can benchmark both architectures against each other.
 
 ---
+## Project status
+
+| Stage | Status |
+|---|---|
+| 1. Product | ✅ Complete and deployed - [Live demo](https://https://tickethubzone.vercel.app/) |
+| 2. Load testing | 🔧 Test tooling ready (k6 scenarios, race script, consistency checker) - benchmarks in progress |
+| 3. Optimization | 🔧 Redis / BullMQ / Socket.IO / waiting-room code implemented behind config flags - to be enabled and benchmarked after Stage 2 |
 
 ## Features
 
