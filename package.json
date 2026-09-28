@@ -1,0 +1,25 @@
+{
+  "name": "tickethub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "High-demand event ticket booking platform (MERN) - built in 3 stages: product, load testing, optimization.",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,magenta \"npm run dev -w server\" \"npm run dev -w client\"",
+    "seed": "npm run seed -w server -- --reset",
+    "test": "npm test -w server",
+    "build": "npm run build -w client",
+    "race": "npm run race -w server --",
+    "worker": "npm run worker -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
